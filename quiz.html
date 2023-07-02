@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="He">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משוב</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>משוב</h1>
+        <p>גולשים נכבדים שלום. 
+            נשמח אם תוכלו להקדיש 2 דקות לענות על הסקר הבא: 
+        </p>
+    </div>
+    <div class="survey">
+        <form action="./output.html" onsubmit="return showAlert()" method = "post" width = "100" style="padding: 0cm;">
+            <div>
+                <input type="text" id="username">
+                <label for="username">:שם משתמש</label>
+            </div>
+
+            <div>ֿ
+                מין:
+                <input type="radio" name="gender" id="male">
+                <label for="male">זכר</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">נקבה</label>
+            </div>
+
+            <div>
+            <input type="number" id="age" min="2" max="120" >
+            <label for="number">:גיל</label>
+            </div>
+
+            <div>
+                <input type="time" id="time">
+                <label for="time">:תאריך</label>
+            </div>
+            <div>
+                <label for="eyecolor">:צבע עיניים</label>
+                <select name="eyecolor" id="eyecolor">
+                <option value="brown">חום</option>
+                <option value="blue">כחול</option>
+                </select>
+            </div>
+            
+            <div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">?צ׳קבוקס, יש</label>
+            </div>
+
+            <div>
+            0<input type="range" id="range" min="1" max="10">10
+            <label for="range">?עד כמה הטופס מובן </label>
+            </div>
+
+    </div>
+
+</body>
+</html>

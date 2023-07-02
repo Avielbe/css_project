@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+         html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            }
+        nav{
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+        }
+        nav a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            flex: 1;
+        }
+        nav a:hover {
+            background-color: #111;
+        }
+        nav img{
+            max-height: 100%;
+            vertical-align: middle;
+
+        }
+        .myFrame {
+                margin: 0px;
+                padding: 0px;
+                height: 100%;
+                border: none;
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="logo.png" alt="Logo">
+        <a href="./home.html" target="myFrame">דף הבית</a>
+        <a href="./register.html" target="myFrame">הרשמה</a>
+        <a href="./datatable.html" target="myFrame">טבלת נתונים</a>
+        <a href="./product.html" target="myFrame">מוצרים</a>
+        <a href="./gallery.html" target="myFrame">גלריה</a>
+        <a href="./cv.html" target="myFrame">אודות</a>
+        <a href="./quiz.html" target="myFrame">משוב</a>
+    </nav>
+    <iframe class="myFrame" name="myFrame"src="./home.html" style="width:100%; height:100%;"></iframe>
+
+
+</body>
+</html>
