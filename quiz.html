@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="He">
+<html lang="He" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +8,45 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100%;
             width: 100%;
             margin: 0;
-            }
+      
+            background-color: rgb(148, 208, 229);
+        }
         .survey{
             display: flex;
             justify-content: center;
-            align-items: center;
+            
         }
+        .survey form {
+            margin: 0 auto;
+        }
+        .survey form div {
+            border: 1px solid black;
+            border-radius: 15%;
+            margin-bottom: 21px;
+            padding: 10px;
+        }
+        .survey form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .survey form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+
     </style>
 </head>
 <body>
@@ -30,10 +58,6 @@
     </div>
     <div class="survey">
         <form action="./output.html" onsubmit="return showAlert()" method = "post" width = "100" style="padding: 0cm;">
-            <div>
-                <input type="text" id="username">
-                <label for="username">:שם משתמש</label>
-            </div>
 
             <div>ֿ
                 מין:
@@ -44,32 +68,36 @@
             </div>
 
             <div>
+                <label for="number">גיל:</label>
             <input type="number" id="age" min="2" max="120" >
-            <label for="number">:גיל</label>
             </div>
 
             <div>
-                <input type="time" id="time">
-                <label for="time">:תאריך</label>
+                <label for="date">תאריך לידה:</label>
+                <input type="date" id="date">
+                <br>
+                תכל׳ס זה מייתר את השאלה הקודמת אבל לא חשוב
             </div>
             <div>
-                <label for="eyecolor">:צבע עיניים</label>
+                <label for="eyecolor">צד מועדף:</label>
                 <select name="eyecolor" id="eyecolor">
-                <option value="brown">חום</option>
-                <option value="blue">כחול</option>
+                <option value="brown">האימפריה הגלקטית</option>
+                <option value="blue">המורדים</option>
                 </select>
             </div>
             
             <div>
-                <input type="checkbox" id="checkbox">
-                <label for="checkbox">?צ׳קבוקס, יש</label>
+                <label for="checkbox">האם אנושי?</label>
+                <input type="checkbox" id="checkbox">כן (אין באמת כח לreCAPTHA)
             </div>
 
             <div>
+            <label for="range">עד כמה הטופס מובן ?</label>
             0<input type="range" id="range" min="1" max="10">10
-            <label for="range">?עד כמה הטופס מובן </label>
             </div>
 
+            <input type="submit" value="שלח">
+            </form>
     </div>
 
 </body>

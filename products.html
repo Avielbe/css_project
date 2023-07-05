@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=	<nav class="product-filter">
+		
+    <title>חנות מוצרי לגו סטאר-וורס</title>
+    <style>
+
+        html,body,div,span,applet,object,iframe,
+        h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+        a,abbr,acronym,address,big,cite,code,
+        del,dfn,em,img,ins,kbd,q,s,samp,
+        small,strike,strong,sub,sup,tt,var,
+        b,u,i,center,
+        dl,dt,dd,ol,ul,li,
+        fieldset,form,label,legend,
+        table,caption,tbody,tfoot,thead,tr,th,td,
+        article,aside,canvas,details,figcaption,figure,
+        footer,header,hgroup,menu,nav,section,summary,
+        time,mark,audio,video{
+            margin:0;
+            padding:0;
+            border:0;
+            outline:0;
+            font-size:100%;
+            font:inherit;
+            vertical-align:baseline;
+        }
+        /* תודה ל- https://codepen.io/levinmejia על רעיון העיצוב */
+        article,aside,details,figcaption,figure,
+        footer,header,hgroup,menu,nav,section{
+            display:block;
+        }
+        body{
+            line-height:1;
+        }
+        ol,ul{
+            list-style:none;
+        }
+        blockquote,q{
+            quotes:none;
+        }
+        blockquote:before,blockquote:after,
+        q:before,q:after{
+            content:’’;
+            content:none;
+        }
+        /* remember to define visible focus styles! 
+        :focus{
+            outline:?????;
+        } */
+
+        /* remember to highlight inserts somehow! */
+        ins{
+            text-decoration:none;
+        }
+        del{
+            text-decoration:line-through;
+        }
+
+        table{
+            border-collapse:collapse;
+            border-spacing:0;
+        }
+
+
+        body {
+            margin: 0 auto;
+            width: 90%;
+            max-width: 1240px;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f6f6f6;
+        }
+
+
+        h1 {
+            font-size: 28px;
+            font-weight: 300;
+            flex: 1;
+        }
+
+        h5 {
+            font-weight: 500;
+            line-height: 1.7em;
+        }
+
+        h6 {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .product-filter {
+            display: flex;
+            padding: 30px 0;
+        }
+
+        .sort {
+            display: flex;
+            align-self: flex-end;
+        }
+
+        .collection-sort {
+        display: flex;
+            flex-direction: column;
+        }
+
+        .collection-sort:first-child {
+            padding-right: 20px;
+        }
+
+        label {
+            color: #666;
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 2em;
+            text-transform: uppercase;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            
+            padding: 2%;
+            flex: 1 16%;
+            
+            background-color: #FFF;
+            box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.25);
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;;
+        }
+
+        .product-info {
+            margin-top: auto;
+            padding-top: 2px;
+            text-align: center;
+        }
+
+        @media ( max-width: 920px ) {
+            
+            .product-card {
+                flex: 1 ;
+            }
+            
+            .products .product-card:first-child, 
+            .products .product-card:nth-child(2) {
+                flex: 2 46%;
+            }
+            
+        }
+
+        @media ( max-width: 600px ) {
+            
+            .product-card {
+                flex: 1 46%;
+            }
+            
+        }
+
+        @media ( max-width: 480px ) {
+            
+            h1 {
+                margin-bottom: 20px;
+            }
+            
+            .product-filter {
+                flex-direction: column;
+            }
+            
+            .sort {
+                align-self: flex-start;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <br>
+    <h1>Lego™ Star Wars</h1> <br>
+    <h2>חנות מוצרי לגו בסדרת סטאר וורס</h2>
+		<br>
+        <div class="collection-sort">
+            <label>:מיין לפי</label>
+            <select>
+          <option value="/">מחיר, מהנמוך לגבוה</option>
+          <option value="/">אין לי מושג באמת איך לסדר &#128517;</option>
+        </select>
+        </div>
+	<section class="products">
+		<div class="product-card">
+			<div class="product-image">
+                <a href="http://https://www.lego.com/en-il/product/stormtrooper-mech-75370">
+				<img src="https://www.lego.com/cdn/cs/set/assets/bltfa48b13de2ee0087/75370_alt1.png?format=webply&fit=bounds&quality=60&width=1200&height=1200&dpr=2">
+                </a>
+            </div>
+			<div class="product-info">
+				<h5>חייל Stormtrooper </h5>
+				<h6>$9.99</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+                <a href="https://www.lego.com/en-il/product/darth-vader-mech-75368">
+				<img src="https://www.lego.com/cdn/cs/set/assets/blta1af5176bf3d5a3a/75368_alt1.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2">
+                </a>
+            </div>
+			<div class="product-info">
+				<h5>Darth Vader</h5>
+				<h6>$13.99</h6>
+			</div>
+		</div>
+		
+		<div class="product-card">
+			<div class="product-image">
+                <a href="https://www.lego.com/en-il/product/at-at-75313">
+				<img src="https://www.lego.com/cdn/cs/set/assets/blt2c75f7c81f1e3871/75313_Box1_v29.jpg?format=webply&fit=bounds&quality=60&width=1200&height=1200&dpr=2">
+                </a>
+            </div>
+			<div class="product-info">
+				<h5>טנק AT-AT </h5>
+				<h6>$45.99</h6>
+			</div>
+		</div>
+
+        <div class="product-card">
+			<div class="product-image">
+                <a href="https://www.lego.com/en-il/product/at-at-75313">
+				<img src="https://www.lego.com/cdn/cs/set/assets/bltab08f6a77b84fb10/75331_alt1.png?format=webply&fit=bounds&quality=60&width=1200&height=1200&dpr=2">
+                </a>
+            </div>
+			<div class="product-info">
+				<h5>המנדלוריאן עם חללית רייזר קרסט</h5>
+				<h6>$49.99</h6>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

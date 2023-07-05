@@ -1,13 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <style>
+        div
+        {
+            border-radius: 5px;
+            }
+        #header
+        {
+            position: fixed;
+            z-index: 1;
+            height:40px;
+            width: 98%;
+            background-color: #668284;
+            margin-bottom: 10px
+            }
+
+        #name {
+            float:left;
+            margin-left: 20px;
+            padding-bottom: 10px;
+            font-size: 16px;
+            font-family: Verdana, sans-serif;
+            color: #ffffff;
+        }
+
+        #email{
+            float:right;
+            margin-right: 20px;
+            padding-bottom: 10px;
+            font-size: 16px;
+            font-family: Verdana, sans-serif;
+            color: #ffffff;
+        }
+
+        #contact
+        {
+            margin-left:45%;
+            padding-bottom: 10px;
+            font-size: 16px;
+            font-family: Verdana, sans-serif;
+            color: #ffffff;
+            }
+
+        a:hover {
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left {
+            flex: 1;
+        }
+        .right
+        {
+            float: left;
+            margin-top: 50px;
+            padding-left:5px;
+            /*margin-right: -10px;
+            margin-left: 14%;*/
+            height: auto;
+            width: 99%;
+            background-color: #E3EDD8;
+            }
+            
+        #footer
+        {
+            height:40px;
+            clear:both;
+            position: relative;
+            background-color: #C1E3E1;
+            }
+            
+        h3
+        {
+            text-decoration: underline;
+            }
+
+        #job-responsibilities
+        {
+            padding: 1px;
+            }
+        .job-title
+        {
+            font-weight: bold;
+            }
+        table
+        {
+            border: 1px dashed black;
+            }
+        td
+        {
+            padding: 2px;
+            border: 1px solid #E88741;
+            }
+
+        #course-name
+        {
+            font-weight:bold;
+            }
+
+        #company-name
+        {
+            height:2px;
+            text-decoration:underline;
+            }
+        #job-title
+        {
+            height: 5px;
+            }
+        .job-duration
+        {
+            float:right;
+            }
+        #heading
+        {
+            font-weight:bold;
+            }
+    </style>
+<!-- תודה ל https://codepen.io/DeepS/pen/DLyZam על הרעיון לעיצוב קורות החיים -->
+
 </head>
 <body>
-    <h1>CV</h1>
-    
+    <html>
+          <body>
+            <div class="container">
+                <div id="header">
+                    <p id="name">אביאל בן אליהו</p>
+                    <a href="mailto:avielmbe@gmail.com" target="_blank"><p id="email">avielmbe@gmail.com</p></a>
+                    </div>
+            
+                    <div class="left"></div>
+                    <div class="right">
+                           <h2>קורות חיים</h2>
+                           
+                           <h3>ניסיון תעסוקתי:</h3>
+                           <h4 id="company-name">חירטוטים בע״מ</h4>
+                           <p id="job-title"><strong>סמנכ״ל תפעולי</strong></p>
+                           <p id="job-responsibilities">התפקיד כלל:</p>
+                           <p>
+                               <li>לזכור להחתים כרטיס בבוקר</li>
+                               <li>להיראות עסוק כל הזמן</li>
+                               <li>להכין חתימה מרשימה במייל</li>
+                               <li>להתקפל הביתה ב15.15 (ולא דקה אחרי)</li>
+                                </p>
+                           <h3>השכלה אקדמאית</h3>
+                           <table>
+                               <tr id="heading">
+                                   <td>הסמכה</td>
+                                   <td>מוסד אקדמי</td>
+                                   <td>ציון</td>
+                                   <td>שנה</td>
+                               </tr>
+                               <tr>
+                                   <td>תואר ראשון</td>
+                                   <td>מכללת הונג קונג</td>
+                                   <td>75.57%</td>
+                                   <td>2014</td>
+                               </tr>
+                               <tr>
+                                   <td>תואר שני</td>
+                                   <td>אוניבריסטת טיוואן</td>
+                                   <td>72.40%</td>
+                                   <td>2016</td>
+                               </tr>
+                               <tr>
+                                   <td>קורס סמנכלים מנכלים</td>
+                                   <td>מכללה פרטית לעקיצות</td>
+                                   <td>120%</td>
+                                   <td>2023</td>
+                               </tr>
+                               
+                           </table>
+                           <h3>המלצות</h3>
+                           הייתי נותן בשמחה אם היו
+                           <p>ֿ
+                            <h3>לורם</h3>
+                            מוסיף לורם שתראה את השימוש בposition-fixed שלמעלה 
+                            <br>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat consequatur delectus architecto facere qui incidunt totam ut quod numquam rem fugiat rerum, laboriosam cum omnis, consequuntur in perspiciatis asperiores! Unde.
+                            <p>
+                           
+                                             
+                    <div id="footer">אצ׳-ארית תמסרי בהצלחה לשאר המתמודדים</div>
+                   </body>
+               </html>
+          </body>
+      </html>
 </body>
 </html>

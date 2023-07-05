@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: rgb(30, 29, 29);
+}
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover;
+  transition: .5s;
+}
+
+
+.box > span {
+  font-size: 3.8vh;
+  display:block
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+  color: lightgrey; 
+}
+
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%; 
+  height: 100%;
+}
+ /* Aviel: credit fot the style to https://codepen.io/knyttneve  */
+</style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="box">
+          <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/08/The-Death-Star-in-Star-Wars.jpg">
+          <span>Death Star</span>
+        </div>
+        <div class="box">
+          <img src="https://www.vmcdn.ca/f/files/via/images/arts/stardestroyer.jpg">
+          <span>Star Destroyr</span>
+        </div>
+        <div class="box">
+          <img src="https://pm1.aminoapps.com/6508/26586145599e181c2f8dc720d962e87a9b0243ef_00.jpg">
+          <span>Imperial Shuttle</span>
+        </div>
+        <div class="box">
+          <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/05/TIE-Fighter-Facts-Featured.jpg">
+          <span>TIE Fighter</span>
+        </div>
+      </div>
+
+
+</body>
+</html>
